@@ -1,3 +1,16 @@
+buildscript {
+  repositories {
+    // Check that you have the following line (if not, add it):
+    google()  // Google's Maven repository
+  }
+  dependencies {
+    ...
+    // Add this line
+    classpath 'com.google.gms:google-services:4.3.13'
+  }
+}
+// everything past this line was the original code for this file (except for the very next blank line)
+
 allprojects {
     repositories {
         google()
